@@ -28,5 +28,12 @@ namespace RejexValidationTest
             bool result = input.Validate_EmailAddress("manasi@gmail.com");
             Assert.IsTrue(result);
         }
+         [Test]
+        public void InputInString_TestMobileNumberLOfUser()
+        {
+            Validation input = new Validation();
+            bool result = input.Validate_FirstName("+91 70810209335");
+            Assert.IsTrue(result);
+        }
     }
 }

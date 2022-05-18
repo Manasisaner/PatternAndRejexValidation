@@ -26,5 +26,13 @@
                 return true;
             }
         }
+         public bool Validate_MobileNumber(string mobileNumber)
+        {
+            if (Regex.IsMatch(mobileNumber, MOBILENUMBER_REGEX)) ;
+            {
+                Console.WriteLine("Email is Valid for the user Account:" + mobileNumber);
+                return true;
+            }
+        }
     }
 }
