@@ -18,5 +18,13 @@
                 return true;
             }
         }
+         public bool Validate_EmailAddress(string emailAddress)
+        {
+            if (Regex.IsMatch(emailAddress, EMAILADDRESS_REGEX)) ;
+            {
+                Console.WriteLine("Password is Valid for the user Account:" + EMAILADDRESS_REGEX);
+                return true;
+            }
+        }
     }
 }

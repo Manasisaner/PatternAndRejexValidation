@@ -21,5 +21,12 @@ namespace RejexValidationTest
             bool result = input.Validate_FirstName("Saner");
             Assert.IsTrue(result);
         }
+        [Test]
+        public void InputInString_EmailAddressOfUser()
+        {
+            Validation input = new Validation();
+            bool result = input.Validate_EmailAddress("manasi@gmail.com");
+            Assert.IsTrue(result);
+        }
     }
 }
