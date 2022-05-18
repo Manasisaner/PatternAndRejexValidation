@@ -2,13 +2,21 @@
 {
     internal class Validation
     {
-        public Validation()
+        public bool Validate_FirstName(string name)
         {
+            if (Regex.IsMatch(name, NAME_REGEX)) ;
+            {
+                Console.WriteLine("First Name is Valid for the user Account:" + name);
+                return true;
+            }
         }
-
-        internal bool Validate_FirstName(string v)
+        public bool Validate_LastName(string last)
         {
-            throw new NotImplementedException();
+            if (Regex.IsMatch(last, NAME_REGEX)) ;
+            {
+                Console.WriteLine("LastName is Valid for the user Account:" + last);
+                return true;
+            }
         }
     }
 }

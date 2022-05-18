@@ -15,5 +15,11 @@ namespace RejexValidationTest
             bool result = input.Validate_FirstName("Manasi");
             Assert.IsTrue(result);
         }
+          public void InputInString_Test_LastNameOfUser()
+        {
+            Validation input = new Validation();
+            bool result = input.Validate_FirstName("Saner");
+            Assert.IsTrue(result);
+        }
     }
 }
