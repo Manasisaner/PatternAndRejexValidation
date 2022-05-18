@@ -42,5 +42,13 @@
                 return true;
             }
         }
+        public bool Validate_EmailPassword_AtLeastOneUpperCase(string emailPassword)
+        {
+            if (Regex.IsMatch(emailPassword, PASSWORDMINIMUMONEUPPERCASE_REGEXX)) ;
+            {
+                Console.WriteLine("Password is Valid for the user Account:" + emailPassword);
+                return true;
+            }
+        }
     }
 }
