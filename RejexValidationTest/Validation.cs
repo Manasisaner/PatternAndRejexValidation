@@ -58,5 +58,11 @@
                 return true;
             }
         }
+         public void InputInString_PasswordOfEmailAddressOfUser_OneSpecialCharacter()
+        {
+            Validation input = new Validation();
+            bool result = input.Validate_EmailPassword_OneSpcialCharacter("HellO&World");
+            Assert.IsTrue(result);
+        }
     }
 }
